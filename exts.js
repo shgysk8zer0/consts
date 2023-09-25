@@ -7,7 +7,7 @@ export const TEXT = ['.txt'];
 export const PLAIN_TEXT = TEXT;
 export const HTML = ['.html', '.htm'];
 export const CSS = ['.css'];
-export const JS = ['.js'];
+export const JS = ['.js', '.mjs', '.cjs'];
 export const JSON = ['.json'];
 export const JSON_LD = ['.jsonld'];
 export const WEB_APP_MANIFEST = ['.webmanifest'];
@@ -18,7 +18,9 @@ export const ATOM_XML = ['.atom'];
 export const ATOM = ATOM_XML;
 export const XSLT = ['.xslt'];
 export const XHTML = ['.xhtml'];
+export const MATH_ML = ['.mml'];
 export const MARKDOWN = ['.md'];
+export const YAML = ['.yml', '.yaml'];
 
 // Images
 export const JPEG = ['.jpeg', '.jpg'];
@@ -26,7 +28,12 @@ export const PNG = ['.png'];
 export const GIF = ['.gif'];
 export const WEBP = ['.webp'];
 export const SVG = ['.svg'];
+export const AVIF = ['.avif'];
 export const GIMP = ['.xcf'];
+
+// iOS Images
+export const HEIC = ['.heic'];
+export const HEIF = ['.heif'];
 
 // Audio
 export const OGG_AUDIO = ['.ogg', '.oga'];
@@ -36,12 +43,15 @@ export const AAC = ['.aac'];
 export const FLAC = ['.flac'];
 export const WAV = ['.wav'];
 export const MIDI = ['.midi'];
+export const M4A = ['.m4a'];
 
 // Video
 export const WEBM = ['.webm'];
 export const OGG_VIDEO = ['.ogg', '.ogv'];
 export const OGV = OGG_VIDEO;
 export const MP4 = ['.mp4'];
+export const M4V = MP4;
+export const QUICKTIME = ['.mov'];
 export const WEBVTT = ['.vtt'];
 
 // Fonts
