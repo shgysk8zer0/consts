@@ -14,3 +14,4 @@ importmap.yaml
 *.log
 *.min.*
 *.map
+.env
