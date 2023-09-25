@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.1] - 2023-09-24
+
+### Fixed
+- Update badges in README
+
 ## [v1.0.0] - 2023-09-24
 
 Initial Release
