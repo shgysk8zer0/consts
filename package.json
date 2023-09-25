@@ -1,18 +1,14 @@
 {
-  "name": "npm-template",
-  "version": "1.1.0",
-  "description": "A template repo for npm packages",
+  "name": "@shgysk8zer0/consts",
+  "version": "1.0.0",
+  "description": "A collection of constants for files, HTTP, dates, etc.",
   "type": "module",
-  "main": "index.cjs",
-  "module": "index.js",
   "exports": {
-    ".": {
-      "import": "./index.js",
-      "require": "./index.cjs"
-    },
     "./*": {
-      "import": "./*.js",
-      "require": "./*.cjs"
+      "import": "./*.js"
+    },
+    "./*.js": {
+      "import": "./*"
     }
   },
   "engines": {
@@ -20,13 +16,10 @@
   },
   "private": false,
   "scripts": {
-    "test": "npm run lint:js && npm run build",
+    "test": "npm run lint:js",
     "preversion": "npm test",
-    "prepare": "npm run build",
     "lint:js": "eslint .",
-    "fix:js": "eslint. --fix",
-    "build": "npm run build:js",
-    "build:js": "rollup -c rollup.config.js",
+    "fix:js": "eslint . --fix",
     "create:lock": "npm i --package-lock-only --ignore-scripts --no-audit --no-fund",
     "version:bump": "npm run version:bump:patch",
     "version:bump:patch": "npm version --no-git-tag-version patch && npm run create:lock",
@@ -35,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shgysk8zer0/npm-template.git"
+    "url": "git+https://github.com/shgysk8zer0/consts.git"
   },
   "author": "Chris Zuber <admin@kernvalley.us>",
   "license": "MIT",
@@ -50,10 +43,10 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/shgysk8zer0/npm-template/issues"
+    "url": "https://github.com/shgysk8zer0/consts/issues"
   },
-  "homepage": "https://github.com/shgysk8zer0/npm-template#readme",
+  "homepage": "https://github.com/shgysk8zer0/consts#readme",
   "devDependencies": {
-    "@shgysk8zer0/js-utils": "^1.0.1"
+    "eslint": "^8.50.0"
   }
 }
