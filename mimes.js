@@ -4,6 +4,7 @@
 
 // Text and Code
 export const TEXT = 'text/plain';
+export const PLAIN_TEXT = TEXT;
 export const HTML = 'text/html';
 export const CSS = 'text/css';
 export const JS = 'application/javascript';
@@ -12,7 +13,9 @@ export const JSON_LD = 'application/ld+json';
 export const WEB_APP_MANIFEST = 'application/manifest+json';
 export const XML = 'application/xml';
 export const RSS_XML = 'application/rss+xml';
+export const RSS = RSS_XML;
 export const ATOM_XML = 'application/atom+xml';
+export const ATOM = ATOM_XML;
 export const XSLT = 'application/xslt+xml';
 export const XHTML = 'application/xhtml+xml';
 export const MATH_ML = 'application/mathml+xml';
