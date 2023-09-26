@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.5] - 2023-09-26
+
+### Added
+- Add some missing common mimes and extensions
+
+### Fixed
+- Fix mime types for fonts
+
 ## [v1.0.4] - 2023-09-26
 
 ### Fixed

@@ -19,8 +19,12 @@ export const ATOM = ATOM_XML;
 export const XSLT = ['.xslt'];
 export const XHTML = ['.xhtml'];
 export const MATH_ML = ['.mml'];
+export const SQL = ['.sql'];
 export const MARKDOWN = ['.md'];
 export const YAML = ['.yml', '.yaml'];
+export const TOML = ['.toml'];
+export const PHP = ['.php'];
+export const BASH = ['.sh'];
 
 // Images
 export const JPEG = ['.jpeg', '.jpg'];
@@ -29,6 +33,8 @@ export const GIF = ['.gif'];
 export const WEBP = ['.webp'];
 export const SVG = ['.svg'];
 export const AVIF = ['.avif'];
+export const ICO = ['.ico'];
+export const TIFF = ['.tiff', '.tif'];
 export const GIMP = ['.xcf'];
 
 // iOS Images
@@ -40,10 +46,12 @@ export const OGG_AUDIO = ['.ogg', '.oga'];
 export const OGA = OGG_AUDIO;
 export const MP3 = ['.mp3'];
 export const AAC = ['.aac'];
+export const OPUS = ['.opus'];
 export const FLAC = ['.flac'];
 export const WAV = ['.wav'];
-export const MIDI = ['.midi'];
+export const MIDI = ['.midi', '.mid'];
 export const M4A = ['.m4a'];
+export const WEBA = ['.weba'];
 
 // Video
 export const WEBM = ['.webm'];
@@ -51,6 +59,7 @@ export const OGG_VIDEO = ['.ogg', '.ogv'];
 export const OGV = OGG_VIDEO;
 export const MP4 = ['.mp4'];
 export const M4V = MP4;
+export const MPEG = ['.mpeg'];
 export const QUICKTIME = ['.mov'];
 export const WEBVTT = ['.vtt'];
 
@@ -60,6 +69,7 @@ export const WOFF2 = ['.woff2'];
 export const TTF = ['.ttf'];
 export const OTF = ['.otf'];
 export const SVG_FONT = ['.svg'];
+export const EOT = ['.eot'];
 
 // Office Documents
 export const CSV = ['.csv'];
@@ -74,13 +84,21 @@ export const LIBRE_OFFICE_SPREADSHEET = ['.ods'];
 export const LIBRE_OFFICE_PRESENTATION = ['.odp'];
 
 // Microsoft Office
-export const MS_WORD = ['.doc'];
-export const MS_EXCEL = ['.xls'];
-export const MS_POWERPOINT = ['.ppt'];
+export const MS_DOCX = ['.docx'];
+export const MS_DOC = ['.doc'];
+export const MS_WORD = MS_DOCX;
+export const MS_XLSX = ['.xlsx'];
+export const MS_XLS = ['.xsl'];
+export const MS_EXCEL = MS_XLSX;
+export const MS_PPTX = ['.pptx'];
+export const MS_PPT = ['.ppt'];
+export const MS_POWERPOINT = MS_PPTX;
 
 // Compressed Archives
 export const GZIP = ['.gz'];
 export const ZIP = ['.zip'];
+export const TAR = ['.tar'];
+export const SEVEN_ZIP = ['.7z'];
 
 // Adobe Types
 export const ADOBE_PDF = PDF;

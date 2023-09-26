@@ -1,6 +1,6 @@
 {
   "name": "@shgysk8zer0/consts",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A collection of constants for files, HTTP, dates, etc.",
   "type": "module",
   "exports": {
