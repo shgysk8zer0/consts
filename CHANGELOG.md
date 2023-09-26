@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.6] - 2023-09-26
+
+### Fixed
+- Fixed bad badges in `README.md`
+
 ## [v1.0.5] - 2023-09-26
 
 ### Added
