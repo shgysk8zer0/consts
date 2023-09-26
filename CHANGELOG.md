@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.4] - 2023-09-26
+
+### Fixed
+- Add missing aliases in `mimes.js`
+
 ## [v1.0.3] - 2023-09-25
 
 ### Fixed
