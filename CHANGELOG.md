@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.7] - 2023-10-01
+
+### Added
+- Add CommonJS versions of modules
+- Add main module for `import '@shgysk8zer0/consts` and `require('@shgysk8zer0/consts')`
+
 ## [v1.0.6] - 2023-09-26
 
 ### Fixed
