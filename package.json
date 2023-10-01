@@ -1,17 +1,29 @@
 {
   "name": "@shgysk8zer0/consts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A collection of constants for files, HTTP, dates, etc.",
   "type": "module",
+  "main": "./cjs/index.cjs",
+  "module": "./index.js",
+  "unpkg": "./index.js",
   "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./cjs/index.cjs"
+    },
     "./*.js": {
-      "import": "./*.js"
+      "import": "./*.js",
+      "require": "./cjs/*.cjs"
     },
     "./*.mjs": {
       "import": "./*.js"
     },
+    "./*.cjs": {
+      "require": "./cjs/*.cjs"
+    },
     "./*": {
-      "import": "./*.js"
+      "import": "./*.js",
+      "require": "./cjs/*.cjs"
     }
   },
   "engines": {
@@ -20,7 +32,10 @@
   "private": false,
   "scripts": {
     "test": "npm run lint:js",
-    "preversion": "npm test",
+    "preversion": "npm test && npm run build",
+    "prepare": "npm run build",
+    "build": "npm run build:js",
+    "build:js": "rm -f ./cjs/*.cjs && rollup -c rollup.config.js",
     "lint:js": "eslint .",
     "fix:js": "eslint . --fix",
     "create:lock": "npm i --package-lock-only --ignore-scripts --no-audit --no-fund",
@@ -50,6 +65,8 @@
   },
   "homepage": "https://github.com/shgysk8zer0/consts#readme",
   "devDependencies": {
-    "eslint": "^8.50.0"
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "eslint": "^8.50.0",
+    "rollup": "^3.29.4"
   }
 }
