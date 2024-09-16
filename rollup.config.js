@@ -5,8 +5,6 @@ import { extname } from 'node:path';
 const scripts = await readdir('./', { withFileTypes: true, encoding: 'utf8' })
 	.then(items => items.filter(item => item.isFile() && extname(item.name) === '.js').map(file => file.name));
 
-console.log(scripts);
-
 export default {
 	input: scripts.filter(script => ! script.endsWith('.config.js')),
 	external: [],
