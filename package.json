@@ -67,7 +67,7 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@shgysk8zer0/eslint-config": "^1.0.0",
-    "eslint": "^9.10.0",
+    "eslint": "^10.0.0",
     "rollup": "^4.0.1"
   }
 }
